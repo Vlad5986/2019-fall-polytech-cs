@@ -1,7 +1,8 @@
 def setup():
     size(300, 300)
+    smooth()
     background(0)
-
+    noLoop()
 def draw():
     strokeWeight(30)
     stroke(255)

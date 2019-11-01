@@ -1,7 +1,7 @@
 def setup():
     size(500, 500)
+    smooth()
     noLoop()
-    
 def draw():
     smooth()
     background(100)

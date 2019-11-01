@@ -1,9 +1,10 @@
 def setup():
     size(400, 400)
+    smooth()
     background(10)
     strokeWeight(10)
     stroke(100)
-
+    noLoop()
 def draw():
     fill(250)
     rect(100, 200, 100, 100)
