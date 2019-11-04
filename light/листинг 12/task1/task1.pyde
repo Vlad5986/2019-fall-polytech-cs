@@ -2,7 +2,6 @@ def setup():
     size(600, 700)
     smooth()
     noStroke()
-    noLoop()
 def draw():
     background(50)
     fill(94, 206, 40, 50)
