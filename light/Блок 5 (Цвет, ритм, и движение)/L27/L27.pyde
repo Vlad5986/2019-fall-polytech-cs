@@ -2,9 +2,9 @@ def setup():
     size(500, 500)
     smooth()
 def draw():
+    global counter
     if frameCount == 1:
         counter = 0
-    global counter
     noStroke()
     fill(10, 50)
     rect(-1, -1, width + 1, height + 1)

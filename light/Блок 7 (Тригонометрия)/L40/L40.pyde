@@ -19,7 +19,6 @@ def draw():
             stroke(k)
             line(cx, cy, x1, y1)
 
-    
 def keyPressed():
     if key == 's':
         saveFrame("myProcessing.png")
