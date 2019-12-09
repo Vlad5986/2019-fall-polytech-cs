@@ -1,5 +1,5 @@
 def setup():
-    size(800, 800)
+    size(660, 400)
     smooth()
     
 def draw():
@@ -7,13 +7,13 @@ def draw():
     stroke(100)
     strokeWeight(5)
 
-    anc1X = mouseX
+    anc1X = mouseX    #координаты первой точки (красный круг)
     anc1Y = mouseY
-    cont1X = width/2
+    cont1X = width/2  #координаты верхнего квадрата
     cont1Y = height/2 - 100
-    cont2X = width/2
+    cont2X = width/2  #координаты нижнего квадрата
     cont2Y = height/2 + 100
-    anc2X = width - mouseX
+    anc2X = width - mouseX #координаты второй точки (зеленый круг)
     anc2Y = height-mouseY
     noFill()
     bezier(anc1X, anc1Y, cont1X, cont1Y, cont2X, cont2Y, anc2X, anc2Y)
@@ -29,8 +29,9 @@ def draw():
     rect(cont1X, cont1Y, 6, 6)
     rect(cont2X, cont2Y, 6, 6)
     
-    fill(170, 0, 0)
     noStroke()
     ellipseMode(CENTER)
+    fill(170, 0, 0)
     ellipse(anc1X, anc1Y, 10, 10)
+    fill(0, 170, 0)
     ellipse(anc2X, anc2Y, 10, 10)
