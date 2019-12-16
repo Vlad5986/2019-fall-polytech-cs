@@ -10,7 +10,7 @@ switcher = 1
 def setup():
     size(500, 500)
     smooth()
-    background(0)
+    background(50)
     strokeWeight(50)
 
 def draw():
