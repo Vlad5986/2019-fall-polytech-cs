@@ -1,6 +1,6 @@
-xCoordinate = [1,2,3,4,5,6,7,8,9,10]
+xCoordinate = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 def setup():
-    size(500,500)
+    size(500, 500)
     smooth()
     noStroke()
     for i in range(len(xCoordinate)):
@@ -12,7 +12,7 @@ def draw():
         fill(200)
         ellipse(coordinate, 250, 30, 30)
         fill(0)
-        ellipse(coordinate, 250, 3,3)
+        ellipse(coordinate, 250, 3, 3)
         
 def keyPressed():
     if (key == 's'):
