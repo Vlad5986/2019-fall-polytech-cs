@@ -1,4 +1,4 @@
-xCt = [1]*10
+xCt = [1]*20
 i = 1
 
 def setup():
