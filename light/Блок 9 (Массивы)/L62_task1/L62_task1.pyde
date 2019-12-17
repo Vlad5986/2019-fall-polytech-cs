@@ -1,17 +1,17 @@
-xCoordinate = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-xCoordinate1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+xCoordinate = [i for i in range(10)]
+xCoordinate1 = [j for j in range(10)]
 def setup():
     size(500,500)
     smooth()
     noStroke()
     for i in range(len(xCoordinate)):
         xCoordinate[i] = 35*i + 90
-    for j in range(len(xCdt)):
+    for j in range(len(xCoordinate1)):
         xCoordinate1[j] = 35*j + 90
 
 def draw():
     background(50)
-    for j in range(len(xCdt)):
+    for j in range(len(xCoordinate1)):
         fill(200,40)
         ellipse( xCoordinate1[j], 340, 150-j*15, 150-j*15)
         fill(0)
